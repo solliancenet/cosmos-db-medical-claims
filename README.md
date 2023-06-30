@@ -30,6 +30,7 @@ From the `deploy/powershell` folder, run the following command. This should prov
 
 ```pwsh
 .\Unified-Deploy.ps1 -resourceGroup <resource-group-name> `
+                     -location <location> `
                      -subscription <subscription-id>
 ```
 
@@ -39,6 +40,7 @@ For deployments that need to use an existing OpenAI service, run the following f
 
 ```pwsh
 .\Unified-Deploy.ps1 -resourceGroup <resource-group-name> `
+                     -location <location> `
                      -subscription <subscription-id> `
                      -openAiName <openAi-service-name> `
                      -openAiRg <openAi-resource-group-name> `
